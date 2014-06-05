@@ -1,0 +1,24 @@
+pages:
+
+- statics:
+  - statics:
+
+- posts:
+  - posts:
+      table:
+        source: all_posts
+        columns: [id, headline, subheadline, content, category, published, published_at]
+      form:
+        display: [id, category, author, headline, subheadline, content, published, published_at]
+        types:
+          content: markdown
+
+- settings:
+  - category:
+
+  - authors:
+      table:
+        sortable: position
+        hide_delete: true
+      form:
+        display: [id, name, job_title, email]

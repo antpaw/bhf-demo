@@ -1,0 +1,54 @@
+!!!
+%html
+  %head
+    %title bhf demo
+    = stylesheet_link_tag :application
+    = csrf_meta_tags
+  %body
+    .container.bs-docs-container
+      .row
+        .col-md-9
+          .bs-docs-section
+            %h1.page-header bhf Demo
+            
+            %p.lead This is a very simple Ruby on Rails project that demonstrates the bhf admin inferface.
+            
+            %p.lead
+              = link_to bhf.root_path, class: 'btn btn-primary big_button' do
+                Click here to launch <strong>bhf</strong>
+            %p.lead
+              name: <strong>admin</strong>
+              <br>
+              password: <strong>bhf</strong>
+            
+            %p.lead Important file in this project:
+            %ul
+              %li.lead
+                %a{href: ''} bhf.yml config
+              %li.lead
+                %a{href: ''} routes.rb
+              %li.lead
+                %a{href: ''} admin_controller.rb for authentification
+              %li.lead
+                %a{href: ''} bhf.rb initial settings
+
+
+            %hr.sep_hr
+
+
+            %h3 More links:
+            .row
+              = link_to '#', class: 'reset_link' do
+                .col-sm-4
+                  %h4 Advanced Demo
+                  %p Look at how powerful bhf can become with advanced configuration.
+              = link_to '#', class: 'reset_link' do
+                .col-sm-4
+                  %h4 bhf gem on github
+                  %p View the source code, check out the documentation or fork it!
+              - if @static
+                .col-sm-4
+                  %h4 You can edit this content in #{link_to 'bhf', bhf.root_path}
+                  %p= @static.content
+                  %p= bhf_edit(@static)
+        .col-md-3
