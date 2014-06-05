@@ -1,1 +1,3 @@
-http://bhf-demo.herokuapp.com/
+# bhf Demo
+
+Live App: http://bhf-demo.herokuapp.com/
