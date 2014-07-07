@@ -2,6 +2,8 @@ pages:
 
 - statics: # Page Statics
   - statics: # bhf can work from this point on because there is a model named Static
+      table:
+        per_page: 2
 
 - posts: # Page Posts
   - posts:
@@ -17,16 +19,19 @@ pages:
         types:
           # change content field from a textarea to a markdown wysiwyg
           content: markdown
+          author: radio
+        links:
+          category: false
 
 - settings: # Page Settings
   - category: # bhf can work from this point on because there is a model named Static
-
-  - authors:
+  
+  - author:
       table:
         # allow to sort the entries via drag and drop (make sure the default_scope order by position)
         sortable: position
         # hide the delete button
-        hide_delete: true
+        # hide_delete: true
       form:
         # fields to display
-        display: [id, name, job_title, email]
+        display: [id, name, job_title, email, posts]

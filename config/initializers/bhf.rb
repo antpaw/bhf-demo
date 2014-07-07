@@ -1,7 +1,4 @@
-module Bhf
-  class Engine < Rails::Engine
-    
-    config.bhf.on_login_fail = :admin_url
-    
-  end
+Bhf.configure do |config|
+  config.on_login_fail = :admin_url
+  config.session_account_id = :no_account
 end

@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20140603194500) do
 
   create_table "statics", force: true do |t|
     t.string   "title"
+    t.string   "subheadline"
     t.text     "content"
     t.boolean  "hidden",      default: false, null: false
     t.datetime "created_at"

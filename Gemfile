@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
-
 gem 'rails'
 
 gem 'uglifier'
+
 gem 'bhf'
 
 group :development do
+  gem 'gdebug'
   gem 'sqlite3'
 end
 
