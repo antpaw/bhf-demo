@@ -28,7 +28,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    bhf (0.9.6)
+    bhf (0.9.7)
       haml-rails (~> 0.4)
       kaminari (~> 0.16)
       rails (~> 4)
